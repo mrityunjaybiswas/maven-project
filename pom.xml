@@ -21,13 +21,6 @@
     <module>webapp</module>
   </modules>
 
-    <distributionManagement>
-    <repository>
-      <id>deployment</id>
-      <url>http://192.168.99.100:8081/nexus/content/repositories/maven_v1//</url>
-    </repository>
-  </distributionManagement>
-
   <build>
     <plugins>
       <plugin>
@@ -204,7 +197,16 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-
+	<distributionManagement>
+    <repository>
+      <id>deploymentRepo</id>
+      <url>http://192.168.99.100:8081/nexus/content/repositories/DockerProject/</url>
+    </repository>
+    <snapshotRepository>
+      <id>deploymentRepo</id>
+      <url>http://192.168.99.100:8081/nexus/content/repositories/DockerProjectSnapshot/</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <scm>
     <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
