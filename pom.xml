@@ -20,6 +20,14 @@
     <module>server</module>
     <module>webapp</module>
   </modules>
+
+    <distributionManagement>
+    <repository>
+      <id>deployment</id>
+      <url>http://192.168.99.100:8081/nexus/content/repositories/maven_v1//</url>
+    </repository>
+  </distributionManagement>
+
   <build>
     <plugins>
       <plugin>
@@ -196,12 +204,7 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-    <distributionManagement>
-    <repository>
-      <id>deployment</id>
-      <url>http://192.168.99.100:8081/nexus/content/repositories/maven_v1//</url>
-    </repository>
-  </distributionManagement>
+
 
   <scm>
     <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
