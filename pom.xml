@@ -197,16 +197,6 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-	<distributionManagement>
-    <repository>
-      <id>deployment</id>
-      <url>http://192.168.99.100:8081/nexus/content/repositories/docker_project/</url>
-    </repository>
-    <snapshotRepository>
-      <id>deployment</id>
-      <url>http://192.168.99.100:8081/nexus/content/repositories/docker_project_snapshot/</url>
-    </snapshotRepository>
-  </distributionManagement>
 
   <scm>
     <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
