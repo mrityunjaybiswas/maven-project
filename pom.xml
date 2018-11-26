@@ -200,11 +200,11 @@
 	<distributionManagement>
     <repository>
       <id>deploymentRepo</id>
-      <url>http://13.233.16.238:8081/nexus/content/repositories/projectv1/</url>
+      <url>http://192.168.99.100:8081/nexus/content/repositories/docker_project/</url>
     </repository>
     <snapshotRepository>
       <id>deploymentRepo</id>
-      <url>http://13.233.16.238:8081/nexus/content/repositories/projectv1Snap/</url>
+      <url>http://192.168.99.100:8081/nexus/content/repositories/docker_project_snapshot/</url>
     </snapshotRepository>
   </distributionManagement>
 
