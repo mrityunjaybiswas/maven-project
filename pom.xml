@@ -199,11 +199,11 @@
   </dependencyManagement>
 	<distributionManagement>
     <repository>
-      <id>deploymentRepo</id>
+      <id>deployment</id>
       <url>http://192.168.99.100:8081/nexus/content/repositories/docker_project/</url>
     </repository>
     <snapshotRepository>
-      <id>deploymentRepo</id>
+      <id>deployment</id>
       <url>http://192.168.99.100:8081/nexus/content/repositories/docker_project_snapshot/</url>
     </snapshotRepository>
   </distributionManagement>
