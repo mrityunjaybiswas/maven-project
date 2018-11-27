@@ -197,6 +197,12 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+  	<distributionManagement>
+    <repository>
+      <id>deploymentRepo</id>
+      <url>http://13.127.17.42:8081/nexus/content/repositories/Docker_Project/</url>
+    </repository>
+  </distributionManagement>
 
   <scm>
     <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
