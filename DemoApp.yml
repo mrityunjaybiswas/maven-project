@@ -1,31 +1,23 @@
 apiVersion: apps/v1
-kind: deployment
+kind: Deployment
 metadata:
-        name: demoapp-deployment
-        labels:
-             app: demoapp
-spec:        
-	template:
-		metadate:
-			name: demoapp
-			labels:
-				app: demoapp
-		spec:
-			containers:
-			- name: myapp
-			  image: mrityunjaybiswas/maven-project
-replicas: 2
-
----
-
-apiVersion: apps/v1
-kind: Service
-metadata:
-   name: demoapp-service
+  name: mydeployment
+  labels:
+    name: my-deployment-labels
+    type: my-deployement-type
 spec:
-   type: NodePort
-   ports:
-     - targetPort: 80
-	   port: 80
-   selector:
-     app: myapp
+  template:
+    metadata:
+      name: my-app
+      labels:
+        name: my-app-label
+        type: sample-type
+        app: my-app
+    spec:
+      containers:
+        - name: my-app
+          image: mrityunjaybiswas/maven-project:latest
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app
